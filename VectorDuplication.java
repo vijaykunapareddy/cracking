@@ -9,8 +9,6 @@ public class VectorDuplication {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
-		//String k = scan.;
-		//System.out.println(k);
 		Vector<String> v1 = new Vector<String>();
 		Vector<String> v2 = new Vector<String>();
 		v1.add("vijay");

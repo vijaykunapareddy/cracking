@@ -2,31 +2,19 @@
 public class StringReplace {
 
 	public static void main(String[] args) {
-		String k = "Mr John Smith     ";
-		String k1 = "";
-		System.out.println(k.length());
-		char[] kk = k.toCharArray();
-		System.out.println(kk.length);
-		int count =0;
-		for (char c : kk) {
-			if (c == ' ') {
+		String k = "Mr John Smith     vijay      ";
+		char[] stringArray = k.toCharArray();
+		String replaceString = "%20";
+		int count = 0;
+		for (int i = 0; i < stringArray.length; i++) {
+			if ((stringArray[i] == ' ')) {
 				count++;
-				System.out.println(count);
-				if (count == 1) {
-					k1 +=  "%20";
-				}
 			}else{
 				count = 0;
-				k1 += c;
 			}
 		}
-		
-		int l = k1.length();
-		if (k1.endsWith("%20")){
-			k1 = k1.substring(0, l-3);
-			System.out.println(k1);
-		}else{
-			System.out.println(k1);
-		}
+		k = k.substring(0, k.length()-count);
+		k = k.replaceAll(" ", "%20");
+		System.out.println(k);
 	}
 }

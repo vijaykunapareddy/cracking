@@ -17,6 +17,7 @@ public class DuplicateCharactersInString {
 			System.out.println("no duplicates");
 		}else{
 			System.out.println("duplicates");
+			System.out.println("---------------------------------- "); 	
 		}
 	}
 

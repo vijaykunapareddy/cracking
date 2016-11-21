@@ -1,4 +1,4 @@
-class Bases {
+class Base {
     public static void display() {
         System.out.println("Static or class method from Base");
     }
@@ -8,10 +8,11 @@ class Bases {
 }
  
 // Subclass
-class Deriveds extends Bases {
+class Derived extends Base {
     public void display() {
         System.out.println("Non-static method from Derived");
     }
+    // Static is added here (Causes Compiler Error) 
     public static void print() {
         System.out.println("Static method from Derived");
    }

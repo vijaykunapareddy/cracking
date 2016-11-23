@@ -25,12 +25,22 @@ public class MatrixRotation {
 			System.out.println();
 		}
 		System.out.println("--------------------------");
+		int flag1 = 0;
+		int flag2 = 0;
 		for (int j = 0; j<columns; j++) {
+			
 			for (int i = rows-1; i >= 0; i--) {
+				
 				//System.out.print(array[i][j]+" ");
-				Integer n = array[i][j];
-				k.add(n);
+				if ((j<3)&&i>1) {
+					
+				}
+				array[flag1][flag2] = array[i][j];
+				//k.add(n);
+				flag2++;
 			}
+			flag2 = 0;
+			flag1++;
 		}
 		System.out.println("===============================");
 		int count = 0;
@@ -42,6 +52,13 @@ public class MatrixRotation {
 				System.out.println();
 			}
 			
+		}
+		System.out.println("999999999999999999999999999999999999");
+		for (int i = 0; i < rows; i++) {
+			for (int j = 0; j < columns; j++) {
+				System.out.print(array[i][j]+" ");
+			}
+			System.out.println();
 		}
 		
 	}

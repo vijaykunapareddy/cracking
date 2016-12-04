@@ -4,7 +4,7 @@ public class StringCount {
 
 	public static void main(String[] args) {
 
-		String k = "";
+		String k = "vijay";
 		String v ="";
 		int count=0;
 		char temp = 0;
